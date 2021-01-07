@@ -1,0 +1,274 @@
+<html>
+<head>
+	<title>EVENTS</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	* {
+  		box-sizing: border-box;
+	}
+
+	body {
+  		font-family: CENTURY GOTHIC;
+  		margin: 0;
+	}
+
+	.header {
+  		padding: 80px;
+  		text-align: center;
+  		background: #573c41;
+  		color: white;
+	}
+
+	.header h1 {
+  		font-size: 40px;
+	}
+
+	.navbar {
+  		overflow: hidden;
+  		background-color: #333;
+	}
+
+
+	.navbar a {
+  		float: left;
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 20px;
+  		text-decoration: none;
+	}
+
+	.dropdown {
+  		float: left;
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 20px;
+  		text-decoration: none;
+	}
+
+	.navbar a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.dropdown .dropbtn {
+  		font-size: 18px;  
+  		border: none;
+ 	 	outline: none;
+  		color: white;
+  		padding: 14px 16px;
+  		background-color: inherit;
+  		font-family: inherit;
+  		margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+  		background-color: #D9A279;
+	}
+
+	.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		background-color: #D9A279;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		z-index: 1;
+	}
+
+	.dropdown-content a {
+  		float: none;
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+  		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+  		background-color: #BF9E86;
+	}
+
+	.dropdown:hover .dropdown-content {
+  		display: block;
+	}
+	.row {  
+  		display: -ms-flexbox; /* IE10 */
+  		display: flex;
+  		-ms-flex-wrap: wrap; /* IE10 */
+  		flex-wrap: wrap;
+	}
+
+	.side {
+  		-ms-flex: 30%; /* IE10 */
+  		flex: 30%;
+  		background-color: #d5b078;
+  		padding: 20px;
+	}
+
+	.main {   
+	  	-ms-flex: 70%; /* IE10 */
+  		flex: 70%;
+  		background-color: e6d1ab;
+  		padding: 20px;
+	}
+
+	.fakeimg {
+  		background-color: #aaa;
+  		width: 100%;
+  		padding: 20px;
+	}
+
+	.footer {
+  		padding: 20px;
+  		text-align: center;
+  		background: #665541;
+	}
+
+
+	@media screen and (max-width: 1000px) {
+  	.row {   
+    		flex-direction: column;
+  	}
+	}
+
+
+	@media screen and (max-width: 400px) {
+  	.navbar a {
+    		float: none;
+    		width: 100%;
+  	}
+	}
+	#myBtn {
+  		display: none;
+  		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+ 	 	background-color: brown;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+
+	#myBtn:hover {
+  		background-color: #555;
+</style>
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div class="header">
+  <h1>EVENTS</h1>
+  <p>SEMINARS. WORKSHOPS. WEBINARS. </p>
+</div>
+
+<div class="navbar">
+  <a href="HACKLAB.HTML">HOME</a>
+  <a href="GALLERY.HTML">GALLERY</a>
+  <a href="EVENTS.HTML">EVENTS</a>
+  <a href="contact.html">Contact Us</a>
+
+<div class="Dropdown">
+    		<button class="dropbtn">Dropdown
+      		<i class="fa fa-caret-down"></i>
+    	</button>
+<div class="dropdown-content">
+      		<a href="ProfilePageofMaelanieCaro.html"> Profile Page of Mae Lanie Caro</a>
+      		<a href="ProfilePageofJamicaco.html"> Profile Page of Jamica Co</a>
+		<a href="ARTICLE1.html"> ARTICLE: Makerspace Towards a New Civic Infrastracture </a>
+		<a href="ARTICLE2.html"> ARTICLE: Ultimate Makerspace Resources Guide</a>
+ </div>
+  </div> 
+</div>
+<div class="row">
+  <div class="side">
+    <h2>LISTS OF EVENTS </h2>
+<P> <a href="http://publiclibrariesonline.org/2016/10/building-and-operating-a-digital-media-lab-with-jeffrey-fisher-fyi-podcast-episode-15/">  Building and Operating a Digital Media Lab  2016 </A><BR> <BR>
+<a href="https://www.webjunction.org/news/webjunction/resources-makerspace-digital-media-lab.html">Libraries Transform, Maker Movement 2017</a><BR> <BR>
+ <a href="https://www.webjunction.org/events/webjunction/creators-and-makers.html?fbclid=IwAR2R-vqrusyUxf3rmOdKh9-b2bGHFB1UG8mtiQMmWnOpGOTXHa0Zk47FUzs">Making Your Space: Creators and Makers in the Library 2014 </A> <BR> <BR>
+  <a href="https://libwww.freelibrary.org/calendar/tag/makers-makerspaces?fbclid=IwAR3RwczaDm32oFKakVU-vnmM5Kby4LrqP1x2RVjCBRzn0Gq6VvmkzoK4R3Q">Radical Self-care in an Era of Activism: A Virtual Salon 2021</a><BR> <BR>
+  <a href="https://www.niso.org/events/2016/12/make-it-library-how-does-library-technology-support-makerspaces?fbclid=IwAR3Sc3iu3VMWgcTww46oCeF-QFRsrrwsdC9H3lokCPs03i4nZav-5cvttZY">Make it at the Library: How Does Library Technology Support Makerspaces? 2019</a><BR> <BR>
+  <a href=https://www.centennialcollege.ca/college-events-2019-2020/explore-technology-in-the-library-makerspace/?fbclid=IwAR1qctuulVcASeWcCZMwM_MyWoYsfULqKUCgtmKyee6iw9pFTWL5-CkjhME>Explore Technology in the Library Makerspace 2016</a><BR> <BR>
+  <a href="https://berkeley.libcal.com/event/7319706?fbclid=IwAR3t11AMM8qnzu-ahKEouESWwVBqNKAMx3F3Jo3Naw3JyLlp8CTrPZoPtBA">Literary Research: How to Research from Home (and Be Awesome)</a><BR> <BR>
+<a href=http://librarynewsette.lasalle.ph/2017/05/makerspace-full-steam-ahead-maker.html?m=1&fbclid=IwAR0j4gPypEP8-E-ezzoPSWmKUHFawAIS9TyCz03YGF4avSEzDMp_RIxk2kc> Makerspace: Full STEAM Ahead 2017</a><BR> <BR>
+<a href="http://www.ala.org/advocacy/sites/ala.org.advocacy/files/content/ALA_3D_Printing_Q__A_Final.pdf"> Progress in the Making: Librarians’ Practical 3D Printing Questions Answered, 2016</a><BR> <BR>
+
+<a href="https://static1.squarespace.com/static/53b2a0eae4b0ad0f45a1b42f/t/591c78f96a4963872bf5d2b0/1495038228869/MakerspacesPub_v15.pdf"> Making + Learning in Museums & Libraries: A Practitioner's Guide & Framework, 2017</a><BR> <BR>
+    
+   
+    <h3>LIBRARY MAKERSPACE</h3>
+    
+  </div>
+  <div class="main">
+    <h2>Building and Operating a Digital Media Lab</h2>
+    <h5>October 27, 2016 <BR> Podcast: FYI Podcast</h5>
+    <div class="fakeimg" style="height:200px;"><img src="picture15.jfif" alt="PODCAST" width="150" height="150"><img src="picture15.jfif" alt="PODCAST" width="150" height="150"><img src="picture15.jfif" alt="PODCAST" width="150" height="150"><img src="picture15.jfif" alt="PODCAST" width="150" height="150"><img src="picture15.jfif" alt="PODCAST" width="150" height="150"></div>
+   <p>by Kathleen Hughes on October 27, 2016</p>
+    <p>We talk with Jeffrey P. Fisher, author of the latest book in PLA’s ‘Quick Reads’ Series “Building and Operating a Digital Media Lab,” about planning your media lab–including creating a vision, selling the concept, budgets, staffing, programming, and more. <BR> <BR>
+   <a href= https://soundcloud.com/publiclibrariesonline/episode-15-building-a-digital-media-lab-with-jeffrey-fisher> LINK: https://soundcloud.com/publiclibrariesonline/episode-15-building-a-digital-media-lab-with-jeffrey-fisher</A></p>
+    <br>
+    <h2>Libraries Transform, Maker Movement</h2>
+    <h5>Website: American Libraries Association</h5>
+    <div class="fakeimg" style="height:200px;"><img src="picture16.png" alt="library" width="400" height="150" ><img src="picture16.png" alt="library" width="400" height="150" ></div>
+    <p><a href= http://www.ilovelibraries.org/librariestransform/maker-movement> LINK:http://www.ilovelibraries.org/librariestransform/maker-movement </A> </p>
+    <p>Despite living at the height of the information age with unimaginable quantities of information flowing towards us, we have a visceral need to push back and create…..to formulate our own questions and build things big and small, quiet and loud, functional and aesthetic. Creation reinforces learning and sparks innovation; it builds problem-solving and collaboration skills; it empowers the maker; and it fosters community around education. Libraries have always been hubs of self-directed learning and their embrace of the maker movement is no surprise, but what they offer can truly amaze. <BR> <BR>
+ <br>
+    <h2>Making Your Space: Creators and Makers in the Library</h2>
+    <h5>July 9, 2014 <br> Webinar: OCLC WebJunction</h5>
+    <div class="fakeimg" style="height:200px;"><img src="picture17.png" alt="library" width="400" height="150" ><img src="picture17.png" alt="library" width="400" height="150" ></div>
+    <p>Presented by: Mara Siegel, Continuing Education Coordinator, Vermont Department of Libraries; and Samantha Maskell, Youth Services Librarian, Rockingham Free Public Library, Bellows Falls, VT</p>
+    <p>There’s a transformation going on in libraries—a shift in emphasis from consuming information to convening and creating. Makerspaces in libraries are a big part of this conversation, where the learning and camaraderie are just as significant as tools like 3D printers. If the idea of a makerspace conjures up the hurdles for you (limited space, limited resources, or limited confidence in your own tech skills), this webinar will help you learn how to get started and grow a space in your library for creating. Together, we will debunk the hype, learn how to define your library’s scope and audience, get your board on board, and find creative partners in your community. <BR>
+    <a href= http://www.ilovelibraries.org/librariestransform/maker-movement> LINK:http://www.ilovelibraries.org/librariestransform/maker-movement </A> </P>
+    <BR> <BR>
+     <br>
+    <h2>Radical Self-care in an Era of Activism: A Virtual Salon</h2>
+    <h5>Now through Thu, February 11, 2021 7:00 p.m.</h5>
+    <div class="fakeimg" style="height:200px;"><img src="picture18.jfif" alt="library" width="250" height="150"><img src="picture18.jfif" alt="library" width="250" height="150"><img src="picture18.jfif" alt="library" width="250" height="150"></div>
+    <p>A shared space for self care inspired by the Harlem Renaissance and the life and legacy of Alice Dunbar-Nelson.</p>
+    <p>Join chef Jena Harris and Professor Pysche Williams-Forson for an evening of self care grounded in the salon-style traditions of the Harlem Renaissance. Chef Jena will use accessible ingredients in a live demonstration and welcome participants to make and enjoy sustaining food and drink using recipes shared in advance. Throughout the event, we will discuss and learn more from Professor Williams-Forson about how the contributions of authors, artists, and activists to American art and politics have built movements which center radical self love. This free, interactive program is a collaboration with the Rosenbach's I Am an American! exhibit and the Free Library's Making Her Mark exhibit -- both of which highlight the life and legacy of Alice Dunbar-Nelson. For more information, visit freelibrary.org/exhibitions and www.alicedunbarnelson.com<BR> <BR> </p>
+     <br>
+    <h2>Make it at the Library: How Does Library Technology Support Makerspaces?</h2>
+    <h5>Webinar</h5>
+    <div class="fakeimg" style="height:200px;"><img src="picture19.png" alt="library" width="150" height="150"><img src="picture19.png" alt="library" width="150" height="150"><img src="picture19.png" alt="library" width="150" height="150"><img src="picture19.png" alt="library" width="150" height="150"><img src="picture19.png" alt="library" width="150" height="150"></div>
+    <p><a href= http://www.ilovelibraries.org/librariestransform/maker-movement> LINK:http://www.ilovelibraries.org/librariestransform/maker-movement </A> </p>
+    <p>The movement to help support the “maker” culture among libraries has grown and and is creating vibrant communities centered around the library in many communities.  Beyond purchasing equipment and the tools necessary to produce objects, what does the library need to do to support these innovation spaces?  How do traditional library services and information management support these communities and new tools?  This session will explore how some of the most successful makerspaces have been created and how traditional library services are being incorporated into those spaces. During this session, speakers from three different institutions that have implemented makerspaces, who will discuss how they have integrated traditional services into their maker initiatives.</P><BR> <BR>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+  <h2>HACKLAB</h2>
+</div>
+
+</body>
+</html>
